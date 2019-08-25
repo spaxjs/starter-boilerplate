@@ -8,7 +8,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
-    "deploy": "bash ./scripts/deploy.sh"
+    "lint": "tslint --project ./ --fix"
   },
   "dependencies": {
     "@spax/core": "^1.1.0",
@@ -25,8 +25,14 @@
     "@types/node": "^12.7.2",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "husky": "^3.0.4",
     "react-scripts": "^3.1.1",
     "source-map-loader": "^0.2.4",
+    "tslint": "^5.19.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.2.1",
     "typescript": "^3.5.3",
     "webpack-bundle-analyzer": "^3.4.1"
   },
@@ -41,5 +47,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   }
 }
