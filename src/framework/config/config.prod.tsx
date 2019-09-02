@@ -1,5 +1,5 @@
-import Loading from "../components/interaction/Loading";
 import React from "react";
+import Loading from "../components/interaction/Loading";
 
 export default {
   version: "0.0.1",

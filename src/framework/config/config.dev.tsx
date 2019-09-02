@@ -1,5 +1,5 @@
-import Loading from "framework/components/interaction/Loading";
 import React from "react";
+import Loading from "../components/interaction/Loading";
 
 export default {
   version: "0.0.1",
@@ -8,8 +8,8 @@ export default {
       fallback: <Loading />,
     },
     router: {
-      NotFound: require("framework/components/exception/NotFound").default,
-      Forbidden: require("framework/components/exception/Forbidden").default,
+      NotFound: require("../components/exception/NotFound").default,
+      Forbidden: require("../components/exception/Forbidden").default,
     },
   },
 };
