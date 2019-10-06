@@ -9,7 +9,6 @@ export default {
     },
     router: {
       NotFound: require("../components/exception/NotFound").default,
-      Forbidden: require("../components/exception/Forbidden").default,
     },
   },
 };
